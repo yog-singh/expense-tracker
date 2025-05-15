@@ -47,8 +47,11 @@ class MainActivity : AppCompatActivity() {
     private lateinit var filterFab: FloatingActionButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+    // Switch from splash screen to main theme
+    setTheme(R.style.Theme_MoneyTracker)
+    
+    super.onCreate(savedInstanceState)
+    setContentView(R.layout.activity_main)
 
         // Set up toolbar
         val toolbar = findViewById<androidx.appcompat.widget.Toolbar>(R.id.toolbar)
@@ -57,6 +60,10 @@ class MainActivity : AppCompatActivity() {
         // Use an icon instead of title for a cleaner look
         supportActionBar?.setDisplayShowTitleEnabled(false)
         toolbar.setTitle(R.string.app_name)
+        
+            // Configure toolbar
+    supportActionBar?.setDisplayUseLogoEnabled(false)
+    toolbar.setContentInsetsRelative(16, 0)
         
         database = AppDatabase.getDatabase(this)
         setupViewPager()

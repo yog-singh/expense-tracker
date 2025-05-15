@@ -16,6 +16,12 @@
         <item name="windowNoTitle">true</item>
     </style>
     
+    <!-- Splash screen theme -->
+    <style name="Theme.MoneyTracker.Splash" parent="Theme.MoneyTracker">
+        <item name="android:windowBackground">@color/purple_500</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    
     <!-- Theme for overlays -->
     <style name="Theme.MoneyTracker.Overlay" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/purple_500</item>

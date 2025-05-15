@@ -42,7 +42,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
-        android:contentDescription="Filter transactions"
-        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+        android:contentDescription="@string/filter_fab_description"
+        app:tint="@android:color/white"
+        app:backgroundTint="?attr/colorPrimary"
+        app:elevation="6dp" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout> 

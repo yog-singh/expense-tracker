@@ -34,3 +34,5 @@ google-services.json
 
 # VSCode
 .vscode/
+
+.DS_Store

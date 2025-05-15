@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Money Tracker</string>
+    <string name="app_description">Track your expenses from bank SMS messages</string>
+    <string name="app_icon_description">Money Tracker logo with money bag and dollar sign</string>
+    <string name="filter_fab_description">Filter transactions by tag</string>
 </resources> 
